@@ -1,0 +1,9 @@
+{
+  "name": "sapi-project",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --filter sapi-template dev",
+    "test": "pnpm --filter sapi-core test",
+    "build": "pnpm --filter sapi-core build"
+  }
+}

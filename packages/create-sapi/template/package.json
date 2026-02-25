@@ -1,0 +1,13 @@
+{
+  "name": "my-sapi",
+  "private": true,
+  "scripts": {
+    "dev": "APP_DIR=$(pwd) bun run node_modules/sapi-core/src/index.ts"
+  },
+  "dependencies": {
+    "hono": "^4.0.0"
+  },
+  "devDependencies": {
+    "sapi-core": "*"
+  }
+}

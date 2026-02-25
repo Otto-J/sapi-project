@@ -1,0 +1,12 @@
+{
+  "name": "create-sapi",
+  "version": "0.1.0",
+  "description": "快速初始化 SAPI 项目",
+  "bin": {
+    "create-sapi": "./index.mjs"
+  },
+  "files": ["index.mjs", "template/"],
+  "engines": {
+    "node": ">=18"
+  }
+}

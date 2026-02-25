@@ -1,0 +1,12 @@
+services:
+  sapi:
+    image: sapi:local
+    ports:
+      - "${PORT:-3007}:3007"
+    volumes:
+      - ./router:/app/router
+      - ./package.json:/app/package.json
+      - ./node_modules:/app/node_modules
+    env_file:
+      - .env
+    restart: always
