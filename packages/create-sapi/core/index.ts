@@ -6,6 +6,7 @@ import { registerRoutes } from './router-loader'
 import { loadMiddleware } from './middleware-loader'
 import { mountDashboard } from './dashboard'
 import { mountReload } from './reload'
+import { mountStatic } from './static'
 
 const PORT = Number(process.env.PORT) || 3007
 const BASE_URL = process.env.BASE_URL || 'api'
@@ -36,6 +37,9 @@ async function start() {
 
   mountDashboard(app, { token: DASHBOARD_TOKEN, routes, deps, baseUrl: BASE_URL })
   mountReload(app, DASHBOARD_TOKEN)
+
+  const hasStatic = await mountStatic(app, APP_DIR)
+  if (hasStatic) console.log('[sapi] 已启用静态文件服务: static/ -> /')
 
   app.get('/health', (c) => c.json({ status: 'ok', routes: routes.length }))
 

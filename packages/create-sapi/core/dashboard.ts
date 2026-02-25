@@ -42,7 +42,7 @@ export function mountDashboard(app: Hono, opts: DashboardOptions) {
 </head>
 <body>
   <h1>SAPI Dashboard
-    <button onclick="reload()">重载路由</button>
+    <button onclick="reload()">重启服务</button>
   </h1>
   <div id="msg"></div>
 

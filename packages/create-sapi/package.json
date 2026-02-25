@@ -1,7 +1,9 @@
 {
   "name": "@web.worker/create-sapi",
-  "version": "0.1.0",
-  "description": "快速初始化 SAPI 项目",
+  "version": "0.1.1",
+  "description": "用最少的配置把 TypeScript 路由函数部署成 HTTP API",
+  "keywords": ["api", "hono", "bun", "scaffold", "router"],
+  "homepage": "https://github.com/web-worker/sapi",
   "type": "module",
   "bin": {
     "create-sapi": "./index.mjs"

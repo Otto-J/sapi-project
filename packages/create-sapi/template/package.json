@@ -2,7 +2,8 @@
   "name": "my-sapi",
   "private": true,
   "scripts": {
-    "dev": "APP_DIR=$(pwd) bun lib/server.js"
+    "dev": "APP_DIR=$(pwd) node supervisor.mjs",
+    "start": "APP_DIR=$(pwd) node supervisor.mjs"
   },
   "dependencies": {
     "hono": "^4.0.0"
