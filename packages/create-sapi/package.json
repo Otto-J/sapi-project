@@ -2,11 +2,27 @@
   "name": "@web.worker/create-sapi",
   "version": "0.1.0",
   "description": "快速初始化 SAPI 项目",
+  "type": "module",
   "bin": {
     "create-sapi": "./index.mjs"
   },
-  "files": ["index.mjs", "template/"],
+  "scripts": {
+    "build": "bun build core/index.ts --outfile template/lib/server.js --target bun",
+    "test": "bun test core/",
+    "prepublishOnly": "bun run build"
+  },
+  "files": [
+    "index.mjs",
+    "template/"
+  ],
   "engines": {
     "node": ">=18"
+  },
+  "dependencies": {
+    "hono": "^4.12.2",
+    "json5": "^2.2.3"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.9"
   }
 }

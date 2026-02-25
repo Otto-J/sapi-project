@@ -2,12 +2,9 @@
   "name": "my-sapi",
   "private": true,
   "scripts": {
-    "dev": "APP_DIR=$(pwd) bun run node_modules/@web.worker/sapi-core/src/index.ts"
+    "dev": "APP_DIR=$(pwd) bun lib/server.js"
   },
   "dependencies": {
     "hono": "^4.0.0"
-  },
-  "devDependencies": {
-    "@web.worker/sapi-core": "latest"
   }
 }
