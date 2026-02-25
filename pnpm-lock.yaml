@@ -26,16 +26,6 @@ importers:
         specifier: ^1.3.9
         version: 1.3.9
 
-  packages/sapi-template:
-    dependencies:
-      hono:
-        specifier: ^4.0.0
-        version: 4.12.2
-    devDependencies:
-      sapi-core:
-        specifier: workspace:*
-        version: link:../sapi-core
-
 packages:
 
   '@types/bun@1.3.9':

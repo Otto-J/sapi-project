@@ -1,5 +1,5 @@
 {
-  "name": "create-sapi",
+  "name": "@web.worker/create-sapi",
   "version": "0.1.0",
   "description": "快速初始化 SAPI 项目",
   "bin": {
